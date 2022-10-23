@@ -1,0 +1,30 @@
+.main {
+    min-height: 100vh;
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.main__header {
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__header span {
+    display: block;
+}

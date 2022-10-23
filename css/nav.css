@@ -1,0 +1,38 @@
+.main__nav {
+  padding: 2rem 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--lora);
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  text-transform: lowercase;
+}
+
+.menu li {
+  font-weight: 400;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.menu li:hover {
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid var(--white);
+    transition: .4s ease;
+}
+
+.menu_hamburguer {
+  display: none;
+}
+
+.menu-close {
+  display: none;
+}

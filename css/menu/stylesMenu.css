@@ -1,0 +1,140 @@
+@import url("../nav.css");
+@import url("../footer.css");
+@import url("../styles.css");
+@import url("./menuItems.css");
+
+body {
+  background-color: var(--dark);
+}
+
+h1 {
+  font-family: var(--lora);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 400;
+  border-bottom: 2px solid var(--gold);
+  width: 50%;
+  margin: 0 auto 2rem;
+}
+
+span {
+  font-weight: lighter;
+}
+
+.main {
+  min-height: 20vh;
+}
+
+.menu_ourMenu {
+  text-align: center;
+}
+
+.menu__btn {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  font-family: var(--montserrat);
+  font-weight: lighter;
+  margin: 0 0.5rem;
+}
+
+/********************** media **************************/
+
+@media screen and (max-width: 425px) {
+  body {
+    max-width: 425px;
+  }
+
+  /******** nav section ********/
+  .main__nav {
+    padding: 2rem;
+    align-content: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  /********* menu hamburguer ***********/
+  .menu {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #030303ec;
+  }
+
+  .menu li {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .menu li:hover {
+    transition: none;
+  }
+
+  .menu_hamburguer {
+    display: inline;
+    z-index: 10;
+  }
+
+  .menu_close {
+    display: none;
+  }
+
+  /********** section menu*************/
+
+  h1 {
+    margin-bottom: 1.4rem;
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .btn {
+    width: 100px;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+  }
+
+  /******** menu section **********/
+  .menu__items {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem auto 0;
+  }
+
+  .item img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .item {
+    border-bottom: 1px solid var(--gold);
+    padding: 1rem 2rem 0.5rem;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .name_info h2 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .name_info p {
+    padding-bottom: 0.3rem;
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,64 @@
+.contact {
+    display: flex;
+    border-bottom: 2px solid var(--gold);
+}
+
+.contact__info {
+    width: 50%;
+    background-image: url('../../img/Contact_image.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 1.5;
+    padding: 2rem 6rem;
+    border-right: 2px solid var(--gold);
+}
+
+.contact__info h2 {
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.contact__info h2 span {
+    display: block;
+}
+
+.contact__info p {
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 50%;
+    align-self: center;
+    padding: 2rem 4rem;
+}
+
+label {
+    text-transform: lowercase;
+}
+
+input {
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    font-family: var(--montserrat);
+    color: #030303;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+textarea {
+    padding: 0.3rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: var(--montserrat);
+    color: #030303;
+    font-weight: 800;
+}
+
+form .btn {
+    margin: 0;
+}

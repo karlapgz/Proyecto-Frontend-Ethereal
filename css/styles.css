@@ -1,0 +1,303 @@
+@import url("./nav.css");
+@import url("../css/principal/main_Principal.css");
+@import url("../css/principal/ourMenu.css");
+@import url("../css/principal/bookTable.css");
+@import url("../css/principal/aboutUs.css");
+@import url("../css/principal/contact.css");
+@import url("./footer.css");
+
+:root {
+  --lora: "Lora", serif;
+  --montserrat: "Montserrat", sans-serif;
+  --dark: #0c0c0c;
+  --gold: #b28e6c;
+  --gray: #d8d4c9;
+  --white: #f3f3f3;
+}
+
+/*** global ***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: var(--montserrat);
+  background-color: var(--dark);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/**** utilidades ****/
+
+.font-lora {
+  font-family: var(--lora);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+span {
+  font-family: var(--montserrat);
+  font-weight: 400;
+  color: var(--gold);
+}
+
+.btn {
+  font-family: var(--montserrat);
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  border: 2px solid var(--gray);
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  line-height: 1;
+}
+
+.btn:hover {
+  border: 2px solid var(--gold);
+  background-color: var(--gold);
+  transition: 0.5s ease;
+}
+
+/**** componentes ****/
+
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    max-width: 425px;
+  }
+
+  /******** nav section ********/
+  .main__nav {
+    padding: 2rem;
+    align-content: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  /********* menu hamburguer ***********/
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #030303ec;
+  }
+
+  .menu li {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .menu li:hover {
+    transition: none;
+  }
+
+  .menu_hamburguer {
+    display: inline;
+    z-index: 10;
+  }
+  
+  .menu_close {
+    display: none;
+  }
+
+  /******** header section ********/
+  .main__header {
+    padding: 2rem;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+  }
+
+  /******** menu section **********/
+  .ourMenu {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .ourMenu__info {
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .ourMenu__info p {
+    font-size: 0.8rem;
+  }
+
+  .ourMenu__images {
+    padding: 1rem 0;
+    border-left: 0;
+  }
+
+  .foodImg {
+    width: 50%;
+  }
+
+  .ourMenu__item {
+    padding-bottom: 1rem;
+  }
+
+  .price {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  .item__info {
+    font-size: 0.8rem;
+    width: 50%;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .item__info p {
+    font-size: 0.6rem;
+  }
+
+  .item__info h3 {
+    text-align: center;
+    color: var(--gold);
+  }
+
+  /***** book a table section ******/
+  .bookTable {
+    height: 15rem;
+    flex-direction: column;
+  }
+
+  .bookTable h2 {
+    font-size: 1.5rem;
+  }
+
+  /****** about us section ****/
+
+  figure {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .aboutUs {
+    padding: 1rem;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .aboutUs h2 {
+    margin: 2rem 0;
+  }
+
+  .aboutUs__images {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  /******** contact section ************/
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__info {
+    width: 100%;
+    padding: 2rem;
+    border-right: 0;
+  }
+
+  .contact__info p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  /******** footer section **********/
+  footer {
+    padding: 3rem 2rem;
+  }
+
+  .menu-footer {
+    margin: 2rem 0;
+    font-size: 0.8rem;
+    display: flex;
+    list-style: none;
+    text-transform: lowercase;
+  }
+
+  .menu-footer li {
+    font-weight: 400;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rights {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .social_media {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}

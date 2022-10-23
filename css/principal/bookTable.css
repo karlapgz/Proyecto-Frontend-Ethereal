@@ -1,0 +1,17 @@
+.bookTable {
+    background-image: url('../../img/fondo_restaurante.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bookTable h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    width: 35%;
+    line-height: 1.5;
+}

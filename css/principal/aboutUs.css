@@ -1,0 +1,50 @@
+figure {
+    position: relative;
+}
+
+
+.aboutUs {
+    padding: 2rem 4rem;
+    border-bottom: 2px solid var(--gold);
+}
+
+.aboutUs h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.aboutUs__images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.caption-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: #030303d3;
+    opacity: 0;
+    text-align: center;
+    padding: 2rem;
+}
+
+.first {
+    opacity: 1;
+}
+
+.caption-image:hover {
+    opacity: 1;
+}
+
+.caption_info {
+    font-family: var(--montserrat);
+    text-transform: initial;
+    padding-top: 1rem;
+}

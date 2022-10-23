@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ethereal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="body">
+    <!-- Main & Nav section -->
+    <main class="main">
+      <nav class="main__nav">
+        <p class="logo font-lora">Ethereal</p>
+        <img class="menu_hamburguer" src="./img/icon_menu.png" alt="hamburger menu that allows to direct to the pages of the website" />
+        <ul class="menu menu_close">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./html/menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="#IDbookTable">Book a table</a>
+          </li>
+          <li>
+            <a href="#IDAboutUs">About us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="main__header">
+        <div>
+          <h1 class="font-lora">
+            Make your moments
+            <span>Something special</span>
+          </h1>
+
+          <button class="btn">
+            Book a table
+            <img class="arrow" src="./img/Arrow.png" alt="arrow to the right for decorative purposes"/>
+          </button>
+        </div>
+      </header>
+      <img class="rectangle" src="./img/Rectangle 1.png"/>
+
+      <video muted autoplay loop src="./img/video.mp4"></video>
+    </main>
+
+    <!-- Menu section -->
+    <section class="ourMenu">
+      <section class="ourMenu__info">
+        <h2 class="font-lora">Our <span>Menu</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          doloribus repudiandae explicabo ipsum totam. Laborum.
+        </p>
+        <button class="btn">See all menu</button>
+      </section>
+
+      <section class="ourMenu__images">
+        <div class="ourMenu__item">
+          <img class="foodImg" src="./img/comida1.webp" alt="Salad dish with chicken and boiled egg" />
+          <p class="price font-lora">$15</p>
+          <div class="item__info">
+            <h3 class="font-lora">Chicken salad</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+
+        <div class="ourMenu__item">
+          <p class="price font-lora">$25</p>
+          <div class="item__info">
+            <h3 class="font-lora">Grape salad</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+
+          <img class="foodImg" src="./img/comida2.webp" alt="Red fruit salad with different cereals" />
+        </div>
+
+        <div class="ourMenu__item">
+          <img class="foodImg" src="./img/comida3.webp" alt="Red fruit salad with different cereals" />
+          <p class="price font-lora">$35</p>
+          <div class="item__info">
+            <h3 class="font-lora">Pork meat</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Book a table section -->
+    <section id="IDbookTable" class="bookTable">
+      <h2>Find the moment and time to enjoy</h2>
+      <button class="btn">
+        Book a table
+        <img src="./img/Arrow.png" alt="arrow image" />
+      </button>
+    </section>
+
+    <!-- About us section -->
+    <section id="IDAboutUs" class="aboutUs">
+      <h2 class="font-lora">About <span>us</span></h2>
+
+      <div class="aboutUs__images">
+        <figure>
+          <img class="aboutUs__img" src="./img/personal.webp" alt="cook preparing various dishes in a restaurant"/>
+          <figcaption class="caption-image first font-lora">
+            Experience
+            <p class="caption_info">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+              sequi ipsam eum maxime delectus a.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img class="aboutUs__img" src="./img/restaurante.webp" alt="Restaurant with a beverage bar and warm lights, with a bunch of people hanging out."/>
+          <figcaption class="caption-image font-lora">
+            Place
+            <p class="caption_info">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+              sequi ipsam eum maxime delectus a.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img class="aboutUs__img" src="./img/barra_bebidas.webp" alt="Beverage bar with a variety of wines and liquors and decorated with flower arrangements"/>
+          <figcaption class="caption-image font-lora">
+            Food
+            <p class="caption_info">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+              sequi ipsam eum maxime delectus a.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact">
+      <div class="contact__info">
+        <h2 class="font-lora">Do you have <span>a question?</span></h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+          porro quod.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam
+          totam itaque nobis ut amet ducimus aliquam id nesciunt incidunt.
+        </p>
+
+        <div class="info_phone">
+          <p>555-789-458</p>
+        </div>
+      </div>
+
+      <form action="">
+        <label for="name">Name</label>
+        <br />
+        <input type="text" name="name" id="name" placeholder="Karla G." required/>
+
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input type="email" name="email" id="email" placeholder="karlaguzman@email.com" required/>
+
+        <br />
+        <label for="message">Message</label>
+        <br />
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
+        <br />
+        <button class="btn">Send</button>
+      </form>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer__info">
+        <p class="logo font-lora">Ethereal</p>
+
+        <ul class="menu-footer">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./html/menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="#IDbookTable">Book a table</a>
+          </li>
+          <li>
+            <a href="#IDAboutUs">About us</a>
+          </li>
+        </ul>
+
+        <div class="address__social-media">
+          <p>1111 Colins Ave. Miami. FL 33135</p>
+          <div class="social_media">
+            <a href="#">
+              <img src="./img/icon_fb.png" alt="Facebook logo that redirects to the restaurant's official Facebook page. " />
+            </a>
+
+            <a href="#">
+              <img src="./img/icon_tw.png" alt="Twitter logo that redirects to the restaurant's official twitter account." />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="rights">All rights reserved</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="./js/animations/animations.js"></script>
+    <script src="./js/menuHamburguer.js"></script>
+  </body>
+</html>

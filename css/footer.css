@@ -1,0 +1,32 @@
+footer {
+    padding: 4rem 4rem 2rem;
+
+}
+
+.menu-footer {
+    display: flex;
+    list-style: none;
+    text-transform: lowercase;
+}
+
+.menu-footer li {
+    font-weight: 400;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rights {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+}
+
+.social_media {
+    margin-top: 1rem;
+}
