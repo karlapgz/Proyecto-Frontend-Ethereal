@@ -1,6 +1,8 @@
 
 # 🍴 ETHEREAL 🍴
+---
 
+![Image text](https://github.com/karlapgz/Proyecto-Frontend-Ethereal/blob/main/pagina-ethereal.png)
 ## Proyecto final de Bootcamp Frontend de Código Fácilito 🐊
 ETHEREAL es una página web dedicada a un restaurante, consta de mostrar la información principal de este y mostrar el menú que ofrecen al público.
 
