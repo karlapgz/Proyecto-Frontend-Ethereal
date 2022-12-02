@@ -1,32 +1,44 @@
 footer {
     padding: 4rem 4rem 2rem;
-
+    width: 80%;
+    margin: auto;
 }
 
 .menu-footer {
     display: flex;
+    justify-content: space-around;
     list-style: none;
     text-transform: lowercase;
 }
 
 .menu-footer li {
     font-weight: 400;
-    margin-left: 2rem;
+    margin-left: initial;
     cursor: pointer;
 }
 
 .footer__info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+}
+
+.footer-nav{
+    width: 35%;
+    height: 130px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .rights {
     text-align: center;
     font-size: 0.7rem;
-    margin-top: 2rem;
+    margin-top: initial;
 }
 
 .social_media {
     margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
 }
